@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+	<title>Attendance</title>
+
+	<style type="text/css">
+
+
+			table{
+			   text-align: center;
+			   border: 1px solid black;
+			   border-collapse: collapse;
+			}
+
+			th{
+				border: 1px solid black;
+				width: 150px;
+				font-family: arial;
+				padding: 15px;
+				text-transform: uppercase;
+			}
+
+			select{
+				width:180px;
+				font-family: arial;
+				padding: 09px;
+				font-size: 19px;
+				margin: 0 auto;
+				text-transform: uppercase;
+				border: none;
+			}
+
+
+			input[type="submit"]{
+				width: 61%;
+				border: none;
+				margin-top: 10px;
+				padding: 20px;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+
+			input[type="submit"]:hover{
+				cursor: pointer;
+				background-color: #31a231;
+				color: white;
+			}
+
+			a{
+				float: right;
+				text-decoration: none;
+				padding: 13px;
+				background-color: #c1c1c1;
+				font-family: verdana;
+				color: white;
+				margin-right: 6px;
+			}
+			a:hover{
+				background-color: #cfcfcf;
+				color: #fefefe;
+			}
+			a:active{
+				border: 2px solid grey;
+			}
+
+
+			
+	</style>
+
+</head>
+<body>
+
+	<a href="logout.jsp">Logout</a>
+	<h1>ATTENDANCE</h1>
+	<form action="rollForm.jsp" method="post">
+		<table>
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>	
+			</tr>
+
+			<tr>
+				<td>
+					<select name="monday">
+						<option></option>
+						<option>Absent</option>
+						<option>Present</option>
+					</select>
+				</td>
+				
+				<td>
+					<select name="tuesday">
+						<option></option>
+						<option>Absent</option>
+						<option>Present</option>
+					</select>
+				</td>
+				
+				<td>
+					<select name="wednesday">
+						<option></option>
+						<option>Absent</option>
+						<option>Present</option>
+					</select>	
+				</td>
+				
+				<td>
+					<select name="thursday">
+						<option></option>
+						<option>Absent</option>
+						<option>Present</option>
+					</select>
+				</td>
+				<td>
+					<select name="friday">
+						<option></option>
+						<option>Absent</option>
+						<option>Present</option>
+					</select>
+				</td>
+				<br>
+				
+			</tr>
+
+		</table>
+			<input type="submit" value="Submit">	
+	</form>
+</body>
+</html>
